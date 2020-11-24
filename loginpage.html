@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kirjaudu sisään</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section id="esittely">
+    <h1>Story Domination</h1>
+    <p>Tervetuloa tarinoiden luovaan maailmaan! Täällä mielikuvitksella ei ole rajoja. Jokaisessa meissä
+        elää pieni tarinoija.</p>
+</section>
+
+<form id="kirjautuminen">
+    <h1>Kirjaudu sisään</h1>
+
+    <label for="username"><b>Käyttäjätunnus</b></label><br>
+    <input type="text" id="username" placeholder="Käyttäjätunnus" name="username"><br>
+    <label for="password"><b>Salasana</b></label><br>
+
+    <input type="password" id="password" placeholder="Salasana" name="password"><br>
+    <input type="submit" class="btn" value="Kirjaudu Sisään">
+</form>
+
+<button class="open-button" onclick="openForm()">Open Form</button>
+
+<div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+        <h1>Luo uusi tili</h1>
+
+        <label for="username2"><b>Käyttäjätunnus:</b></label><br>
+        <input type="text" id="username2" placeholder="Käyttäjätunnus" name="usename2"><br>
+
+        <label for="fname"><b>Etunimi:</b></label><br>
+        <input type="text" id="fname" placeholder="Etunimi" name="fname"><br>
+
+        <label for="lname"><b>Sukunimi:</b></label><br>
+        <input type="text" id="lname" placeholder="Sukunimi" name="lname">
+
+        <label for="email"><b>Sähköposti:</b></label>
+        <input type="text" id="email" placeholder="Sähköposti" name="email" required>
+
+        <label for="psw"><b>Salasana:</b></label>
+        <input type="password" id="psw" placeholder="Salasana" name="psw" required>
+
+        <input type="checkbox" id="ika" name="ika" value="true">
+        <label for="ika">Olen yli 18 vuotias</label><br>
+
+        <button type="submit" class="btn">Rekisteröidy</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Sulje</button>
+    </form>
+</div>
+<script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+</script>
+
+
+</body>
+</html>
