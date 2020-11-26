@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="margin: -8px;">
+<html lang="en" style="margin: -8px;" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Kirjaudu sisään</title>
@@ -19,7 +19,7 @@
 
 
 <section id="oikea">
-    <form id="kirjautuminen">
+    <form id="kirjautuminen"  class="form-container">
         <h1>Kirjaudu sisään</h1>
 
         <label for="username"><b>Käyttäjätunnus</b></label><br>
@@ -33,17 +33,17 @@
     <button class="open-button" onclick="openForm()">Rekisteröidy</button>
 
     <div class="form-popup" id="myForm">
-        <form action="/action_page.php" class="form-container">
+        <form class="form-container">
             <h1>Luo uusi tili</h1>
 
             <label for="username2"><b>Käyttäjätunnus:</b></label><br>
             <input type="text" id="username2" placeholder="Käyttäjätunnus" name="usename2"><br>
 
             <label for="fname"><b>Etunimi:</b></label><br>
-            <input type="text" id="fname" placeholder="Etunimi" name="fname"><br>
+            <input type="text" id="fname" placeholder="Etunimi" name="fname" required><br>
 
             <label for="lname"><b>Sukunimi:</b></label><br>
-            <input type="text" id="lname" placeholder="Sukunimi" name="lname">
+            <input type="text" id="lname" placeholder="Sukunimi" name="lname" required>
 
             <label for="email"><b>Sähköposti:</b></label>
             <input type="text" id="email" placeholder="Sähköposti" name="email" required>
@@ -51,7 +51,7 @@
             <label for="psw"><b>Salasana:</b></label>
             <input type="password" id="psw" placeholder="Salasana" name="psw" required>
 
-            <input type="checkbox" id="ika" name="ika" value="true">
+            <input type="checkbox" id="ika" name="ika" value="true" required="" oninvalid="this.setCustomValidity('Sivusto on tarkoitettu täysi-ikäisille')">
             <label for="ika">Olen yli 18 vuotias</label><br>
 
             <button type="submit" class="btn">Rekisteröidy</button>
