@@ -13,7 +13,7 @@
     <p id="teksti">Tervetuloa tarinoiden luovaan maailmaan! Jokaisessa meissä
         elää pieni tarinoija. Täällä mielikuvitksella ei ole rajoja!</p>
     <video id="taustavideo" autoplay loop muted poster="http">
-        <source src="proot.mp4" type="video/mp4">
+        <source src="tausta_vidi.mp4" type="video/mp4">
     </video>
 </section>
 
@@ -22,27 +22,27 @@
     <form id="kirjautuminen"  class="form-container">
         <h1>Kirjaudu sisään</h1>
 
-        <label for="username"><b>Käyttäjätunnus</b></label><br>
-        <input type="text" id="username" placeholder="Käyttäjätunnus" name="username"><br>
-        <label for="password"><b>Salasana</b></label><br>
+        <label for="username"><b>Käyttäjätunnus</b></label>
+        <input type="text" id="username" placeholder="Käyttäjätunnus" name="username" required>
+        <label for="password"><b>Salasana</b></label>
 
-        <input type="password" id="password" placeholder="Salasana" name="password"><br>
+        <input type="password" id="password" placeholder="Salasana" name="password" required>
         <input type="submit" id="kirjaudu" class="btn" value="Kirjaudu Sisään">
     </form>
 
-    <button class="open-button" onclick="openForm()">Rekisteröidy</button>
+    <button id="rekisteroidy" class="open-button" onclick="openForm()">Rekisteröidy</button>
 
     <div class="form-popup" id="myForm">
         <form class="form-container">
             <h1>Luo uusi tili</h1>
 
-            <label for="username2"><b>Käyttäjätunnus:</b></label><br>
-            <input type="text" id="username2" placeholder="Käyttäjätunnus" name="usename2"><br>
+            <label for="username2"><b>Käyttäjätunnus:</b></label>
+            <input type="text" id="username2" placeholder="Käyttäjätunnus" name="usename2" required>
 
-            <label for="fname"><b>Etunimi:</b></label><br>
-            <input type="text" id="fname" placeholder="Etunimi" name="fname" required><br>
+            <label for="fname"><b>Etunimi:</b></label>
+            <input type="text" id="fname" placeholder="Etunimi" name="fname" required>
 
-            <label for="lname"><b>Sukunimi:</b></label><br>
+            <label for="lname"><b>Sukunimi:</b></label>
             <input type="text" id="lname" placeholder="Sukunimi" name="lname" required>
 
             <label for="email"><b>Sähköposti:</b></label>
@@ -52,7 +52,7 @@
             <input type="password" id="psw" placeholder="Salasana" name="psw" required>
 
             <input type="checkbox" id="ika" name="ika" value="true" required="" oninvalid="this.setCustomValidity('Sivusto on tarkoitettu täysi-ikäisille')">
-            <label for="ika">Olen yli 18 vuotias</label><br>
+            <label for="ika">Olen yli 18 vuotias</label>
 
             <button type="submit" class="btn">Rekisteröidy</button>
             <button type="button" class="btn cancel" onclick="closeForm()">Sulje</button>
