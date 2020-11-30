@@ -23,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loginpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/loginpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proot.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/tausta_vidi.mp4" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +69,8 @@
       <workItem from="1606487830113" duration="1362000" />
       <workItem from="1606597313005" duration="568000" />
       <workItem from="1606666960649" duration="592000" />
-      <workItem from="1606727085736" duration="11256000" />
+      <workItem from="1606727085736" duration="14271000" />
+      <workItem from="1606751700104" duration="7103000" />
     </task>
     <servers />
   </component>
@@ -87,6 +87,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1606296258324">
