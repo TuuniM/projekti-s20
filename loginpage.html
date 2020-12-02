@@ -19,18 +19,21 @@
 
 
 <section id="oikea">
-    <form id="kirjautuminen"  class="form-container">
-        <h1>Kirjaudu sisään</h1>
+    <div id="kirjaudulomake">
+        <form id="kirjautuminen"  class="form-container">
+            <h1>Kirjaudu sisään</h1>
 
-        <label for="username"><b>Käyttäjätunnus</b></label>
-        <input type="text" id="username" placeholder="Käyttäjätunnus" name="username" required>
-        <label for="password"><b>Salasana</b></label>
+            <label for="username"><b>Käyttäjätunnus</b></label>
+            <input class="kentta" type="text" id="username" placeholder="Käyttäjätunnus" name="username">
 
-        <input type="password" id="password" placeholder="Salasana" name="password" required>
-        <input type="submit" id="kirjaudu" class="btn" value="Kirjaudu Sisään">
-    </form>
+            <label for="password"><b>Salasana</b></label>
+            <input class="kentta" type="password" id="password" placeholder="Salasana" name="password">
 
-    <button id="rekisteroidy" class="open-button" onclick="openForm()">Rekisteröidy</button>
+            <input type="submit" id="kirjaudu" class="btn" value="Kirjaudu Sisään">
+        </form>
+        <button id="rekisteroidy" class="open-button" onclick="openForm()">Rekisteröidy</button>
+    </div>
+
 
     <div class="form-popup" id="myForm">
         <form class="form-container">
@@ -54,8 +57,8 @@
             <input type="checkbox" id="ika" name="ika" value="true" required="" oninvalid="this.setCustomValidity('Sivusto on tarkoitettu täysi-ikäisille')">
             <label for="ika">Olen yli 18 vuotias</label>
 
-            <button type="submit" class="btn">Rekisteröidy</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Sulje</button>
+            <button id="submitnappi" type="submit" class="btn">Rekisteröidy</button>
+            <button id="suljenappi" type="button" class="btn cancel" onclick="closeForm()">Sulje</button>
         </form>
     </div>
 </section>
